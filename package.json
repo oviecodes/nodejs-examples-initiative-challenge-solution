@@ -7,8 +7,9 @@
 		"test": "test"
 	},
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"start": "node index"
+		"test": "node test/index.js",
+		"start": "node index",
+		"dev": "nodemon index"
 	},
 	"repository": {
 		"type": "git",
@@ -22,6 +23,14 @@
 	},
 	"homepage": "https://github.com/demola07/nodejs-examples-initiative-challenge#readme",
 	"dependencies": {
-		"express": "^4.17.1"
+		"bent": "^7.3.10",
+		"express": "^4.17.1",
+		"hbs": "^4.1.1",
+		"semver": "^7.3.2"
+	},
+	"devDependencies": {
+		"get-port": "^5.1.1",
+		"nock": "^13.0.4",
+		"tape": "^5.0.1"
 	}
 }
